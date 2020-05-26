@@ -28,7 +28,7 @@ func loadData() {
 	// Read starter data
 	log.Println("Reading data file...")
 	// Binary must be run in the top level directory for this to work (for Docker)
-	data, err := ioutil.ReadFile("data/story.json")
+	data, err := ioutil.ReadFile("./data/story.json")
 	if err != nil {
 		log.Panicln("couldn't read data file:", err)
 	}
