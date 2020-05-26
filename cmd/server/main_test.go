@@ -5,6 +5,8 @@ import (
 	"testing"
 )
 
+// Ensure service is started before running tests.
+
 func TestValidatePath_HappyPath(t *testing.T) {
 	testCases := []struct {
 		in  string

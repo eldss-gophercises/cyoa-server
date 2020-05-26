@@ -15,7 +15,7 @@ var rh *rejson.Handler = rejson.NewReJSONHandler()
 func setRedisClient() {
 	// Set up redis client with default options
 	client := redis.NewClient(&redis.Options{
-		Addr:     "172.20.0.2:6379",
+		Addr:     "redis:6379",
 		Password: "",
 		DB:       0,
 	})
@@ -27,9 +27,7 @@ func setRedisClient() {
 func loadData() {
 	// Read starter data
 	log.Println("Reading data file...")
-	// cmd := exec.Command("ls", "-l")
-	// out, _ := cmd.Output()
-	// log.Println(string(out))
+	// Binary must be run in the top level directory for this to work (for Docker)
 	data, err := ioutil.ReadFile("data/story.json")
 	if err != nil {
 		log.Panicln("couldn't read data file:", err)
