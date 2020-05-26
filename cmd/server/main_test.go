@@ -3,21 +3,7 @@ package main
 import (
 	"bytes"
 	"testing"
-
-	"github.com/go-redis/redis"
 )
-
-func setRedisClient() {
-	// Set up redis client with default options
-	client := redis.NewClient(&redis.Options{
-		Addr:     "localhost:6379",
-		Password: "",
-		DB:       0,
-	})
-
-	// Use ReJSON with the redis client
-	rh.SetGoRedisClient(client)
-}
 
 func TestValidatePath_HappyPath(t *testing.T) {
 	testCases := []struct {

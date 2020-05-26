@@ -8,7 +8,7 @@ import "net/http"
 // The path must start with /arc/. Subsequent path segments are treated as nested
 // keys for the JSON formatted story arc. For example /arc/intro gets the
 // introduction arc and /arc/intro/title will get the title of the introduction arc.
-func getStoryArc(w http.ResponseWriter, r *http.Request) {
+func getStoryData(w http.ResponseWriter, r *http.Request) {
 	// Ensure valid path and method or return 400
 	path, err := getRedisPath(r.URL.Path)
 	if err != nil || r.Method != http.MethodGet {
