@@ -3,13 +3,13 @@ services:
   redis:
     image: redislabs/rejson:latest
     container_name: redisjson
-    ports:
-      - 6379:6379
+    expose:
+      - 6379
 
   server:
     build: .
     container_name: story_server
     ports:
-      - 8080:8080
+      - 8085:8085
     depends_on:
       - redis
