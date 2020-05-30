@@ -9,7 +9,7 @@
         "options": [
             {
                 "text": "That story about the Sticky Bandits isn't real, it is from Home Alone 2! Let's head to New York.",
-                "arc": "new-york"
+                "arc": "new_york"
             },
             {
                 "text": "Gee, those bandits sound pretty real to me. Let's play it safe and try our luck in Denver.",
@@ -17,7 +17,7 @@
             }
         ]
     },
-    "new-york": {
+    "new_york": {
         "title": "Visiting New York",
         "story": [
             "Upon arriving in New York you and your furry travel buddy first attempt to hail a cab. Unfortunately nobody wants to give a ride to someone with a \"pet\". They kept saying something about shedding, as if gophers shed.",
@@ -45,11 +45,11 @@
         "options": [
             {
                 "text": "Clearly that man in the fox outfit was the winner.",
-                "arc": "sean-kelly"
+                "arc": "sean_kelly"
             },
             {
                 "text": "I don't think those fake abs would help much in a feat of strength, but our caped friend clearly won this bout. Let's go congratulate him.",
-                "arc": "mark-bates"
+                "arc": "mark_bates"
             },
             {
                 "text": "Slip out the back before anyone asks us to pick a side.",
@@ -57,7 +57,7 @@
             }
         ]
     },
-    "sean-kelly": {
+    "sean_kelly": {
         "title": "Exit Stage Left",
         "story": [
             "As you begin walking up to the fox-man you hear him introduce himself as Sean Kelly. While waiting in line you decide to do a little research to see what types of work Sean is into.",
@@ -72,7 +72,7 @@
             }
         ]
     },
-    "mark-bates": {
+    "mark_bates": {
         "title": "Costume Time",
         "story": [
             "After talking with the wannabe superhero for a while you come to learn that his name is Mark Bates, and aside from his costume obsession he seems like a nice enough guy.",

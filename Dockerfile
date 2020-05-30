@@ -16,5 +16,5 @@ FROM scratch
 WORKDIR /cmd
 COPY --from=builder /cmd/server /cmd/
 COPY --from=builder /cmd/data/story.json /cmd/data/
-EXPOSE 8080
+EXPOSE 8085
 ENTRYPOINT ["/cmd/server"]

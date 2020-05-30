@@ -31,5 +31,6 @@ func getStoryData(w http.ResponseWriter, r *http.Request) {
 
 	// Send successful response
 	w.Header().Set("Content-Type", "application/json; charset=utf-8")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Write(story)
 }
